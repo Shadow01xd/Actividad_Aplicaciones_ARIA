@@ -7,12 +7,16 @@
 </head>
 <body>
   <!-- Navbar -->
+  <!-- role="navigation" Define esta sección como navegación principal para tecnologías de asistencia -->
   <nav class="navbar" role="navigation" aria-label="Navegación principal">
     <div class="nav-container">
       <div class="nav-logo">
         <span class="logo-text">WebAsist</span>
       </div>
+      <!-- role="menubar" Declara este contenedor como una barra de menú accesible -->
       <ul class="nav-menu" role="menubar">
+        <!-- role="none" Excluye el <li> del árbol de accesibilidad, enfocando solo el enlace -->
+        <!-- role="menuitem" Declara este enlace como un ítem de menú para navegación accesible -->
         <li role="none"><a href="#inicio" role="menuitem" aria-label="Ir a la sección de inicio">Inicio</a></li>
         <li role="none"><a href="#formulario-seccion" role="menuitem" aria-label="Ir al formulario de contacto">Contacto</a></li>
         <li role="none"><a href="#servicios" role="menuitem" aria-label="Ver nuestros servicios">Servicios</a></li>
@@ -22,6 +26,7 @@
   </nav>
 
   <!-- Sección Hero -->
+  <!-- role="banner" Marca esta sección como el encabezado principal del sitio -->
   <section id="inicio" class="hero-section" role="banner">
     <div class="hero-content">
       <h1 class="hero-title">Asistencia y Asesoría de Páginas Web</h1>
@@ -44,20 +49,24 @@
   </section>
 
   <!-- Sección de Servicios -->
+  <!-- role="region" Define una región importante del contenido para navegación por lectores de pantalla -->
   <section id="servicios" class="services-section" role="region" aria-labelledby="servicios-titulo">
     <div class="container">
       <h2 id="servicios-titulo" class="section-title">Servicios de Desarrollo Web</h2>
       <div class="services-grid">
+        <!-- role="article" Marca este bloque como un artículo independiente accesible -->
         <div class="service-card" role="article">
           <div class="service-icon">🎨</div>
           <h3>Diseño Web Moderno</h3>
           <p>Creamos sitios web atractivos y responsivos que se adaptan a todos los dispositivos y navegadores.</p>
         </div>
+        <!-- role="article" Marca este bloque como un artículo independiente accesible -->
         <div class="service-card" role="article">
           <div class="service-icon">♿</div>
           <h3>Accesibilidad Web</h3>
           <p>Desarrollo de páginas web accesibles que cumplen con estándares WCAG para usuarios con discapacidades.</p>
         </div>
+        <!-- role="article" Marca este bloque como un artículo independiente accesible -->
         <div class="service-card" role="article">
           <div class="service-icon">⚡</div>
           <h3>Optimización SEO</h3>
@@ -68,6 +77,7 @@
   </section>
 
   <!-- Sección del Formulario -->
+  <!-- role="region" Define una región importante del contenido para navegación por lectores de pantalla -->
   <section id="formulario-seccion" class="form-section" role="region" aria-labelledby="formulario-titulo">
     <div class="container">
       <h2 id="formulario-titulo" class="section-title">Contáctanos</h2>
@@ -102,6 +112,7 @@
   </section>
 
   <!-- Sección Acerca -->
+  <!-- role="region" Define una región importante del contenido para navegación por lectores de pantalla -->
   <section id="acerca" class="about-section" role="region" aria-labelledby="acerca-titulo">
     <div class="container">
       <h2 id="acerca-titulo" class="section-title">Acerca de Nosotros</h2>
@@ -129,6 +140,7 @@
   </section>
 
   <!-- Footer -->
+  <!-- role="contentinfo" Identifica el pie de página con información del sitio -->
   <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer-content">
