@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Asistencia y Asesoría de Páginas Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">WebAsist</span>
+      </div>
+      <ul class="nav-menu" role="menubar">
+        <li role="none"><a href="#inicio" role="menuitem" aria-label="Ir a la sección de inicio">Inicio</a></li>
+        <li role="none"><a href="#formulario-seccion" role="menuitem" aria-label="Ir al formulario de contacto">Contacto</a></li>
+        <li role="none"><a href="#servicios" role="menuitem" aria-label="Ver nuestros servicios">Servicios</a></li>
+        <li role="none"><a href="#acerca" role="menuitem" aria-label="Información sobre nosotros">Acerca</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Sección Hero -->
+  <section id="inicio" class="hero-section" role="banner">
+    <div class="hero-content">
+      <h1 class="hero-title">Asistencia y Asesoría de Páginas Web</h1>
+      <p class="hero-subtitle">Expertos en desarrollo web accesible y moderno</p>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">100+</span>
+          <span class="stat-label">Proyectos</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Años</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">24/7</span>
+          <span class="stat-label">Soporte</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Servicios -->
+  <section id="servicios" class="services-section" role="region" aria-labelledby="servicios-titulo">
+    <div class="container">
+      <h2 id="servicios-titulo" class="section-title">Servicios de Desarrollo Web</h2>
+      <div class="services-grid">
+        <div class="service-card" role="article">
+          <div class="service-icon">🎨</div>
+          <h3>Diseño Web Moderno</h3>
+          <p>Creamos sitios web atractivos y responsivos que se adaptan a todos los dispositivos y navegadores.</p>
+        </div>
+        <div class="service-card" role="article">
+          <div class="service-icon">♿</div>
+          <h3>Accesibilidad Web</h3>
+          <p>Desarrollo de páginas web accesibles que cumplen con estándares WCAG para usuarios con discapacidades.</p>
+        </div>
+        <div class="service-card" role="article">
+          <div class="service-icon">⚡</div>
+          <h3>Optimización SEO</h3>
+          <p>Mejoramos el posicionamiento en buscadores y la velocidad de carga para máxima visibilidad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección del Formulario -->
+  <section id="formulario-seccion" class="form-section" role="region" aria-labelledby="formulario-titulo">
+    <div class="container">
+      <h2 id="formulario-titulo" class="section-title">Contáctanos</h2>
+      <div class="card">
+        <!-- role="form" Identifica el bloque como formulario para lectores de pantalla -->
+        <form id="formulario" role="form" aria-labelledby="form-title">
+          <span id="form-title" class="sr-only">Formulario de contacto</span>
+
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre"
+                 aria-label="Campo para escribir tu nombre">
+
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email"
+                 aria-label="Campo para escribir tu correo electrónico">
+
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" rows="4"
+                    aria-label="Área para escribir tu mensaje"></textarea>
+
+          <!-- role="button" Declara el control como botón accesible -->
+          <button type="submit" role="button"
+                  aria-label="Botón para enviar el formulario">
+            Enviar
+          </button>
+        </form>
+
+        <!-- role="alert": Anuncia mensajes de validación al instante -->
+        <div id="alerta" role="alert" hidden></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Acerca -->
+  <section id="acerca" class="about-section" role="region" aria-labelledby="acerca-titulo">
+    <div class="container">
+      <h2 id="acerca-titulo" class="section-title">Acerca de Nosotros</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>Somos expertos en desarrollo web con más de 5 años de experiencia creando sitios web modernos, accesibles y optimizados para buscadores.</p>
+          <p>Nos especializamos en ofrecer soluciones web completas que incluyen diseño, desarrollo, accesibilidad y posicionamiento SEO para que tu negocio destaque en internet.</p>
+        </div>
+        <div class="about-features">
+          <div class="feature">
+            <span class="feature-icon">💼</span>
+            <span>Experiencia Profesional</span>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">🎯</span>
+            <span>Resultados Garantizados</span>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">🤝</span>
+            <span>Atención Personalizada</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>WebAsist</h3>
+          <p>Asistencia y asesoría profesional en desarrollo web</p>
+        </div>
+        <div class="footer-section">
+          <h4>Enlaces Rápidos</h4>
+          <ul>
+            <li><a href="#inicio" aria-label="Ir al inicio">Inicio</a></li>
+            <li><a href="#servicios" aria-label="Ver servicios">Servicios</a></li>
+            <li><a href="#formulario-seccion" aria-label="Ir al formulario">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Servicios Web</h4>
+          <ul>
+            <li>Diseño Responsivo</li>
+            <li>Accesibilidad WCAG</li>
+            <li>Optimización SEO</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 WebAsist. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
